@@ -1,10 +1,7 @@
 package Aug11;
 
-public class cricketPlayer {
-    private final String game = "Cricket";
-    public String playerName;
-    cricketPlayer (String name){
-        this.playerName = name;
+public class cricketPlayer extends player {
+    cricketPlayer(String playerName){
+        super("Cricket", playerName);
     }
-
 }

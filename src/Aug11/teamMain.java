@@ -18,12 +18,12 @@ public class teamMain {
         cricketPlayer newCPlayer1 = new cricketPlayer("P1");
         List <cricketPlayer> updatedTeam = addPlayer(cricketTeam, newCPlayer1);
 
-        System.out.println(cricketTeam.get(0).playerName);
+        System.out.println("Game ->" + cricketTeam.get(0).getGame() + "; Player Name -> " + cricketTeam.get(0).getPlayerName());
 
         List <cricketPlayer> footballTeam = new ArrayList<>();
         cricketPlayer newFPlayer1 = new cricketPlayer("P2");
         List <cricketPlayer> updatedFootballTeam = addPlayer(footballTeam, newFPlayer1);
-        System.out.println(footballTeam.get(0).playerName);
+        System.out.println("Game ->" + footballTeam.get(0).getGame() + "; Player Name -> "+ footballTeam.get(0).getPlayerName());
     }
 }
 
