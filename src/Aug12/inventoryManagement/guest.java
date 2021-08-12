@@ -1,6 +1,5 @@
-package Aug11.inventoryManagement;
+package Aug12.inventoryManagement;
 
-import Aug10_InventoryManagement.productNotFound;
 import java.lang.NullPointerException;
 import java.util.List;
 
@@ -8,7 +7,7 @@ public class guest {
     private String userName;
     private int userId;
 
-    public guest(String uName, int uId){
+    guest (String uName, int uId){
         this.userName = uName;
         this.userId   = uId;
     }

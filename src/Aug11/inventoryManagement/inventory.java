@@ -1,6 +1,4 @@
 package Aug11.inventoryManagement;
-import Aug10_InventoryManagement.productNotFound;
-import Aug10_InventoryManagement.user;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +20,7 @@ but not more than 5 people waiting at a time.Improve searching of your solution 
 public class inventory{
     private static HashMap<String, Integer> productNameCategory = new HashMap<String, Integer>();
 
-    private static HashMap <category, Queue <user>> userTraffic_category;
+    private static HashMap <category, Queue <guest>> userTraffic_category;
     private static List<String> productNameList = new ArrayList<>();
     private static List<Integer> categoryList = new ArrayList<>();
 
@@ -33,7 +31,7 @@ public class inventory{
         productNameCategory.put(pName, pCategory);
     }
 
-    public static void main(String[] args) throws productNotFound {
+    public static void main(String[] args) throws productNotFound, Aug10_InventoryManagement.productNotFound {
         guest newGuest = new guest("one", 0);
         addProduct("Nike", 1);
         //newGuest.search(productNameList, "Nike" );

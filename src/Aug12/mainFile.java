@@ -1,5 +1,8 @@
 package Aug12;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
@@ -11,7 +14,7 @@ A family has a fruit of basket of 3 types fruits. The basket has a capacity to a
 Write a program to demonstrate this and use appropriate collections type.
  */
 public class mainFile {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         basket newBasket = new basket();
         fruit apple = new fruit("apple");
         newBasket.addFruit(apple);
@@ -29,5 +32,8 @@ public class mainFile {
         children c1 = new children("a");
         q.add(c1);
         basket updatedBasket = c1.takefruit(apple, newBasket);
+        try (PrintStream out = new PrintStream(new FileOutputStream("output.txt"))) {
+            System.setOut(out);
+        }
     }
 }
