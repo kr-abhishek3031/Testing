@@ -35,11 +35,12 @@ public class inventory{
         printList(productList);
 
     }
+    static Discount dis = (double a) -> {return 0.9*a ;};
     public static void printList(List<product> list) {
         for(product p : list) {
             System.out.println("Product Name: " + p.getPname() + ", Product price: " + p.getPprice());
             if(p.sale){
-                double t = 0.9 * (p.getPprice());
+                double t = dis.newPrice(p.getPprice());
                 System.out.println("Product on sale!!! Our Discounted Price: " + t);
             }
         }
@@ -47,4 +48,9 @@ public class inventory{
         System.out.println("======================================================================");
     }
 
+}
+interface Discount{
+    //String greet(String s);
+
+    double newPrice(double a);
 }
