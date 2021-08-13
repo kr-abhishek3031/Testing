@@ -11,7 +11,9 @@ public class ShoppingCart implements AddInCart, DeleteFromCart {
     public ShoppingCart(){
         this.cart = new HashMap<>();
     }
-
+    public Map<product, Integer> getCart(){
+        return this.cart;
+    }
     @Override
     public void addProductInCart(product p, Integer quantity) {
         if(this.cart.containsKey(p)){
@@ -34,5 +36,7 @@ public class ShoppingCart implements AddInCart, DeleteFromCart {
         }
         else System.out.println("Error: Product is not in your cart!!!");
     }
+
+
 
 }

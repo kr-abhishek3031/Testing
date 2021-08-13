@@ -3,14 +3,24 @@ package Aug13.caseStudy;
 import java.lang.NullPointerException;
 import java.util.List;
 
-public class guest {
+public class guest implements CartValue {
     private String userName;
     private int userId;
     public ShoppingCart myCart;
+    private PaymentOption card ;
+    private PaymentOption rewardPoints;
+    public guest (String uName, int uId, int cardNumber){
+        this.userName = uName;
+        this.userId   = uId;
+        this.myCart = new ShoppingCart();
+        this.card = new Card(uName, cardNumber);
+        this.rewardPoints = new RewardPoints(uName);
+    }
     public guest (String uName, int uId){
         this.userName = uName;
         this.userId   = uId;
         this.myCart = new ShoppingCart();
+        this.rewardPoints = new RewardPoints(uName);
     }
 
     public String getuserName() {
@@ -19,6 +29,8 @@ public class guest {
     public int getuserId(){
         return this.getuserId();
     }
+    public PaymentOption getCard(){return this.card ;}
+    public PaymentOption getRewardPoints(){return this.rewardPoints;}
 
     public <T> void search(List<T> searchlist, T query) throws productNotFound {
         for (T x: searchlist){
@@ -36,5 +48,15 @@ public class guest {
                 throw new productNotFound("Product out of stock");
             }
         }
+    }
+    @Override
+    public double cartValue() {
+        double cartval =0;
+        for (product p : this.myCart.getCart().keySet())
+        {
+            double prodVal = p.getPprice() * this.myCart.getCart().get(p);
+            cartval += prodVal;
+        }
+        return cartval;
     }
 }

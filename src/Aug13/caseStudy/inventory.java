@@ -35,7 +35,16 @@ public class inventory{
         //printList(productList);
         newGuest.myCart.addProductInCart(productList.get(0), 1);
         newGuest.myCart.deleteFromCart(productList.get(2));
-
+        double cartvalue;
+        cartvalue = newGuest.cartValue();
+        try {
+            newGuest.getCard().pay(cartvalue);
+        } catch (NullPointerException e) {
+            //  Block of code to handle errors
+            System.out.println("Card not found. Kindly add your card before Payment.");
+            //throw new productNotFound("Card not found. Kindly add your card before Payment.");
+        }
+        newGuest.getRewardPoints().pay(cartvalue);
     }
     static Discount dis = (double a) -> {return 0.9*a ;};
     public static void printList(List<product> list) {
