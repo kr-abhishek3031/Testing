@@ -8,7 +8,9 @@ public class player {
         this.playerName = playerName;
     }
     public static String getGame(){
-        return player.game;
+        //cricketPlayer cp1 = new cricketPlayer("hell");
+        //playerName = "hello";
+        return game;
     }
     public String getPlayerName(){
         return this.playerName;

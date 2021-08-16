@@ -19,7 +19,7 @@ public class teamMain {
         List <cricketPlayer> updatedTeam = addPlayer(cricketTeam, newCPlayer1);
 
         System.out.println("Game ->" + cricketTeam.get(0).getGame() + "; Player Name -> " + cricketTeam.get(0).getPlayerName());
-
+        //player newCP = new cricketPlayer("1");
         List <cricketPlayer> footballTeam = new ArrayList<>();
         cricketPlayer newFPlayer1 = new cricketPlayer("P2");
         List <cricketPlayer> updatedFootballTeam = addPlayer(footballTeam, newFPlayer1);
