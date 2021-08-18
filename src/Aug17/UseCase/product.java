@@ -41,6 +41,7 @@ public class product extends category {
         this.productPrice = pPrice;
         this.sale = sl;
         this.LOGGER = Logger.getLogger(loggerName);
+        this.LOGGER.log(Level.FINER, "New Product added");
     }
 
     static final Comparator<product> PRICE_ORDER;
