@@ -1,0 +1,7 @@
+In addition to previous casestudy add the following functionalities
+
+Give functionality of shopping cart to users.
+They should be able to add product into their cart and delete from it.
+Also add features to allow uses pay through credit card or reward points.
+Consider for now users have 1000 default reward points.
+Do not focus on how user will get more rewards points.

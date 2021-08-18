@@ -10,6 +10,7 @@ public class LogTesting {
 
     private static final LogManager logManager = LogManager.getLogManager();
     private static final Logger LOGGER = Logger.getLogger("confLogger");
+
     static{
         try {
             logManager.readConfiguration(new FileInputStream("/Users/Z007JCC/IdeaProjects/Testing/src/Aug17/Exercise/logger.properties"));
@@ -18,6 +19,12 @@ public class LogTesting {
         }
     }
     public static void main(String[] args) {
+        try{
+            Class x = Class.forName("Aug17.Exercise.Divide");
+            
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         LOGGER.config("Testing configurations");
         LOGGER.severe("Severe message logged");
         LOGGER.fine("Fine message logged");

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-08-18T09:05:55.121711Z</date>
+  <millis>1629277555121</millis>
+  <nanos>711000</nanos>
+  <sequence>0</sequence>
+  <logger>Aug17.UseCase.inventory</logger>
+  <level>CONFIG</level>
+  <class>Aug17.UseCase.inventory</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Configuration done.</message>
+</record>
+<record>
+  <date>2021-08-18T09:05:55.178978Z</date>
+  <millis>1629277555178</millis>
+  <nanos>978000</nanos>
+  <sequence>1</sequence>
+  <logger>Aug17.UseCase.inventory</logger>
+  <level>FINE</level>
+  <class>Aug17.UseCase.inventory</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>New guest arrived</message>
+</record>
+<record>
+  <date>2021-08-18T09:05:55.179201Z</date>
+  <millis>1629277555179</millis>
+  <nanos>201000</nanos>
+  <sequence>2</sequence>
+  <logger>Aug17.UseCase.inventory</logger>
+  <level>FINE</level>
+  <class>Aug17.UseCase.inventory</class>
+  <method>addProduct</method>
+  <thread>1</thread>
+  <message>New producted added</message>
+</record>
+<record>
+  <date>2021-08-18T09:05:55.182574Z</date>
+  <millis>1629277555182</millis>
+  <nanos>574000</nanos>
+  <sequence>4</sequence>
+  <logger>Aug17.UseCase.inventory</logger>
+  <level>FINE</level>
+  <class>Aug17.UseCase.inventory</class>
+  <method>addProduct</method>
+  <thread>1</thread>
+  <message>New producted added</message>
+</record>
+<record>
+  <date>2021-08-18T09:05:55.182776Z</date>
+  <millis>1629277555182</millis>
+  <nanos>776000</nanos>
+  <sequence>5</sequence>
+  <logger>Aug17.UseCase.inventory</logger>
+  <level>FINE</level>
+  <class>Aug17.UseCase.inventory</class>
+  <method>addProduct</method>
+  <thread>1</thread>
+  <message>New producted added</message>
+</record>
+<record>
+  <date>2021-08-18T09:05:55.200111Z</date>
+  <millis>1629277555200</millis>
+  <nanos>111000</nanos>
+  <sequence>7</sequence>
+  <logger>Aug17.UseCase.inventory</logger>
+  <level>SEVERE</level>
+  <class>Aug17.UseCase.inventory</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Null pointer exception occured</message>
+  <exception>
+    <message>java.lang.NullPointerException</message>
+    <frame>
+      <class>Aug17.UseCase.inventory</class>
+      <method>main</method>
+      <line>72</line>
+    </frame>
+  </exception>
+</record>
+</log>

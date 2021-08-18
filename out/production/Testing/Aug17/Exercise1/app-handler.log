@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-08-18T05:21:29.811556Z</date>
+  <millis>1629264089811</millis>
+  <nanos>556000</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>CONFIG</level>
+  <class>Aug17.UseCase.product</class>
+  <method>&lt;clinit&gt;</method>
+  <thread>1</thread>
+  <message>Configuration done.</message>
+</record>
+</log>
