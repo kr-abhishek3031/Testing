@@ -1,4 +1,4 @@
-package Aug18.Exercise2;
+package Aug19.Exercise1;
 
 import java.sql.Connection;
 import java.sql.SQLException;
