@@ -4,17 +4,15 @@ public class Student {
     private  Long id;
     private  String name;
     private String email;
-    private String course;
+    private String program;
 
 
-    public String getCourse() {
-        return course;
-    }
 
-    public void setCourse(String course) {
-        this.course = course;
-    }
-
+    /*Student(Long id, String nm, String ml, String prg){
+        this.id = id;
+        this.name = nm;
+        this.email - ml
+    }*/
     public String getEmail() {
         return email;
     }
@@ -37,5 +35,13 @@ public class Student {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getProgram() {
+        return program;
+    }
+
+    public void setProgram(String program) {
+        this.program = program;
     }
 }

@@ -11,7 +11,7 @@ import java.sql.SQLException;
         private static String jdbcUsername = "postgres";
         private static String jdbcPassword = "123456";
 
-        public static Connection getConnection() {
+        public static Connection getPGConnection() {
             Connection connection = null;
             try {
                 Class.forName(JDBC_DRIVER);
