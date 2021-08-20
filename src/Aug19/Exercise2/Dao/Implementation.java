@@ -129,4 +129,14 @@ public class Implementation implements StudentDao {
         user.setProgram( rs.getString("program") );
         return user;
     }
+
+    /*
+    public static <T> List <T> fromArrayList(T[] a) {
+        List<T> t = new ArrayList<>();
+        return t;
+    }
+    public <T> T testGenerics(){
+        T t = null;
+        return t;
+    }*/
 }
