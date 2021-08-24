@@ -3,7 +3,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 public class CreateStudentTable {
-    private static final String CREATE_TABLE = "CREATE TABLE Students " +
+    private static final String CREATE_TABLE = "CREATE TABLE Student " +
             "(  ID int not NULL,"
             + "Name varchar(255),"
             + "Email varchar(255),"
