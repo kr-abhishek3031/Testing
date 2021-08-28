@@ -5,11 +5,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class CreateActorTable {
-    private static final String CREATE_TABLE = "CREATE TABLE Actors1 " +
-            "(  ActorID int not NULL,"
+    private static final String CREATE_TABLE = "CREATE TABLE ProductCatalog " +
+            "(  id bigint not NULL,"
             + "Name varchar(255),"
-            + "Country varchar(255),"
-            +"PRIMARY KEY ( ActorID )) ";
+            + "Price float,"
+            + "Quantity bigint,"
+            +"PRIMARY KEY ( id )) ";
 
     public static void main(String[] args) {
         System.out.println(CREATE_TABLE);
